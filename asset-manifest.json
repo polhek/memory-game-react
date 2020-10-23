@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memory-game-react/static/css/main.e1050963.chunk.css",
+    "main.js": "/memory-game-react/static/js/main.9155d9d6.chunk.js",
+    "main.js.map": "/memory-game-react/static/js/main.9155d9d6.chunk.js.map",
+    "runtime-main.js": "/memory-game-react/static/js/runtime-main.6f7790a6.js",
+    "runtime-main.js.map": "/memory-game-react/static/js/runtime-main.6f7790a6.js.map",
+    "static/js/2.2b62368c.chunk.js": "/memory-game-react/static/js/2.2b62368c.chunk.js",
+    "static/js/2.2b62368c.chunk.js.map": "/memory-game-react/static/js/2.2b62368c.chunk.js.map",
+    "index.html": "/memory-game-react/index.html",
+    "precache-manifest.61265e3305e68961029767f66045b3f8.js": "/memory-game-react/precache-manifest.61265e3305e68961029767f66045b3f8.js",
+    "service-worker.js": "/memory-game-react/service-worker.js",
+    "static/css/main.e1050963.chunk.css.map": "/memory-game-react/static/css/main.e1050963.chunk.css.map",
+    "static/js/2.2b62368c.chunk.js.LICENSE.txt": "/memory-game-react/static/js/2.2b62368c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/memory-game-react/static/media/Staatliches-Regular.d5746e3b.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f7790a6.js",
+    "static/js/2.2b62368c.chunk.js",
+    "static/css/main.e1050963.chunk.css",
+    "static/js/main.9155d9d6.chunk.js"
+  ]
+}
