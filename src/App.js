@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import cards from './components/Cards';
 // Components
@@ -15,22 +15,31 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [visibility, setVisibility] = useState('visible');
   const [visibilityWin, setVisibilityWin] = useState('visible');
+  useEffect(() => {
+    if (score > 19) {
+      handleVisibilityWin();
+      setScore(0);
+      unClick(iconList);
+      setHighScore(20);
+    }
+  }, [score]);
+
   const handleClick = (event) => {
     const clickedIcon = cards.find((icon) => icon.id == event.target.id);
     // check if icon was clicked...
+
     if (!clickedIcon.clicked) {
       clickedIcon.clicked = true;
       incrementScore();
+
       setIconList(cards);
-      if (score === 20) {
-        handleVisibilityWin();
-      }
     } else {
       handleVisibility();
 
       if (score > highScore) {
         setHighScore(score);
       }
+
       setScore(0);
       unClick(iconList);
     }
@@ -39,10 +48,8 @@ function App() {
   const handleVisibility = (event) => {
     if (visibility == 'visible') {
       setVisibility('');
-      console.log(visibility);
     } else if (visibility === '') {
       setVisibility('visible');
-      console.log(visibility);
     }
     console.log('sadasdas');
   };
@@ -60,9 +67,11 @@ function App() {
     if (visibilityWin == 'visible') {
       setVisibilityWin('');
       console.log(visibility);
+      console.log(score);
     } else if (visibilityWin === '') {
       setVisibilityWin('visible');
       console.log(visibility);
+      console.log(score);
     }
   };
 
