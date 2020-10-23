@@ -22,12 +22,11 @@ function App() {
       clickedIcon.clicked = true;
       incrementScore();
       setIconList(cards);
-    } else {
       if (score === 20) {
         handleVisibilityWin();
-      } else {
-        handleVisibility();
       }
+    } else {
+      handleVisibility();
 
       if (score > highScore) {
         setHighScore(score);

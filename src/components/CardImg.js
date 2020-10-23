@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../img/1.png';
+
 const CardImg = ({ imgPath, id, handleClick }) => {
   return (
     <div className="imgDiv">
